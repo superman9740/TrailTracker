@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1B090916FBB43B006F19AA /* ttMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B090816FBB43B006F19AA /* ttMapViewController.m */; };
+		3C1B090B16FBB463006F19AA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1B090A16FBB463006F19AA /* MapKit.framework */; };
+		3C1B090D16FBB4A9006F19AA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1B090C16FBB4A9006F19AA /* CoreLocation.framework */; };
+		3C1B091116FBB519006F19AA /* ttAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B091016FBB519006F19AA /* ttAppController.m */; };
+		3C1B091816FBB809006F19AA /* ttMyTripsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B091716FBB809006F19AA /* ttMyTripsViewController.m */; };
+		3C90FB6B171655030030DCED /* ttNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90FB6A171655030030DCED /* ttNewViewController.m */; };
+		3C90FB6F171657280030DCED /* ttTrail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90FB6E171657280030DCED /* ttTrail.m */; };
 		3CE236EE16FBB25600BA1723 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE236ED16FBB25600BA1723 /* UIKit.framework */; };
 		3CE236F016FBB25600BA1723 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE236EF16FBB25600BA1723 /* Foundation.framework */; };
 		3CE236F216FBB25600BA1723 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE236F116FBB25600BA1723 /* CoreGraphics.framework */; };
@@ -18,7 +25,6 @@
 		3CE2370416FBB25600BA1723 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2370316FBB25600BA1723 /* Default-568h@2x.png */; };
 		3CE2370716FBB25600BA1723 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2370516FBB25600BA1723 /* MainStoryboard_iPhone.storyboard */; };
 		3CE2370A16FBB25600BA1723 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2370816FBB25600BA1723 /* MainStoryboard_iPad.storyboard */; };
-		3CE2370D16FBB25600BA1723 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2370C16FBB25600BA1723 /* FirstViewController.m */; };
 		3CE2370F16FBB25600BA1723 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2370E16FBB25600BA1723 /* first.png */; };
 		3CE2371116FBB25600BA1723 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2371016FBB25600BA1723 /* first@2x.png */; };
 		3CE2371416FBB25600BA1723 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2371316FBB25600BA1723 /* SecondViewController.m */; };
@@ -42,6 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C1B090716FBB43B006F19AA /* ttMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttMapViewController.h; sourceTree = "<group>"; };
+		3C1B090816FBB43B006F19AA /* ttMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttMapViewController.m; sourceTree = "<group>"; };
+		3C1B090A16FBB463006F19AA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3C1B090C16FBB4A9006F19AA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3C1B090F16FBB519006F19AA /* ttAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttAppController.h; sourceTree = "<group>"; };
+		3C1B091016FBB519006F19AA /* ttAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttAppController.m; sourceTree = "<group>"; };
+		3C1B091616FBB809006F19AA /* ttMyTripsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttMyTripsViewController.h; sourceTree = "<group>"; };
+		3C1B091716FBB809006F19AA /* ttMyTripsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttMyTripsViewController.m; sourceTree = "<group>"; };
+		3C90FB69171655030030DCED /* ttNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttNewViewController.h; sourceTree = "<group>"; };
+		3C90FB6A171655030030DCED /* ttNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttNewViewController.m; sourceTree = "<group>"; };
+		3C90FB6D171657280030DCED /* ttTrail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttTrail.h; sourceTree = "<group>"; };
+		3C90FB6E171657280030DCED /* ttTrail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttTrail.m; sourceTree = "<group>"; };
 		3CE236EA16FBB25600BA1723 /* TrailTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrailTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE236ED16FBB25600BA1723 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3CE236EF16FBB25600BA1723 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,8 +75,6 @@
 		3CE2370316FBB25600BA1723 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3CE2370616FBB25600BA1723 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		3CE2370916FBB25600BA1723 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		3CE2370B16FBB25600BA1723 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		3CE2370C16FBB25600BA1723 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		3CE2370E16FBB25600BA1723 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		3CE2371016FBB25600BA1723 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		3CE2371216FBB25600BA1723 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -78,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C1B090D16FBB4A9006F19AA /* CoreLocation.framework in Frameworks */,
+				3C1B090B16FBB463006F19AA /* MapKit.framework in Frameworks */,
 				3CE236EE16FBB25600BA1723 /* UIKit.framework in Frameworks */,
 				3CE236F016FBB25600BA1723 /* Foundation.framework in Frameworks */,
 				3CE236F216FBB25600BA1723 /* CoreGraphics.framework in Frameworks */,
@@ -97,9 +115,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C1B090516FBB3F4006F19AA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C1B091216FBB7D4006F19AA /* MyTripsView */,
+				3C1B090616FBB405006F19AA /* MapView */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3C1B090616FBB405006F19AA /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				3C1B090716FBB43B006F19AA /* ttMapViewController.h */,
+				3C1B090816FBB43B006F19AA /* ttMapViewController.m */,
+			);
+			name = MapView;
+			sourceTree = "<group>";
+		};
+		3C1B090E16FBB504006F19AA /* AppController */ = {
+			isa = PBXGroup;
+			children = (
+				3C1B090F16FBB519006F19AA /* ttAppController.h */,
+				3C1B091016FBB519006F19AA /* ttAppController.m */,
+			);
+			name = AppController;
+			sourceTree = "<group>";
+		};
+		3C1B091216FBB7D4006F19AA /* MyTripsView */ = {
+			isa = PBXGroup;
+			children = (
+				3C1B091616FBB809006F19AA /* ttMyTripsViewController.h */,
+				3C1B091716FBB809006F19AA /* ttMyTripsViewController.m */,
+				3C90FB69171655030030DCED /* ttNewViewController.h */,
+				3C90FB6A171655030030DCED /* ttNewViewController.m */,
+			);
+			name = MyTripsView;
+			sourceTree = "<group>";
+		};
+		3C90FB6C171657150030DCED /* ValueObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3C90FB6D171657280030DCED /* ttTrail.h */,
+				3C90FB6E171657280030DCED /* ttTrail.m */,
+			);
+			name = ValueObjects;
+			sourceTree = "<group>";
+		};
 		3CE236E116FBB25600BA1723 = {
 			isa = PBXGroup;
 			children = (
+				3C1B090C16FBB4A9006F19AA /* CoreLocation.framework */,
+				3C1B090A16FBB463006F19AA /* MapKit.framework */,
 				3CE236F316FBB25600BA1723 /* TrailTracker */,
 				3CE2372516FBB25600BA1723 /* TrailTrackerTests */,
 				3CE236EC16FBB25600BA1723 /* Frameworks */,
@@ -130,12 +197,13 @@
 		3CE236F316FBB25600BA1723 /* TrailTracker */ = {
 			isa = PBXGroup;
 			children = (
+				3C90FB6C171657150030DCED /* ValueObjects */,
+				3C1B090E16FBB504006F19AA /* AppController */,
+				3C1B090516FBB3F4006F19AA /* ViewControllers */,
 				3CE236FC16FBB25600BA1723 /* AppDelegate.h */,
 				3CE236FD16FBB25600BA1723 /* AppDelegate.m */,
 				3CE2370516FBB25600BA1723 /* MainStoryboard_iPhone.storyboard */,
 				3CE2370816FBB25600BA1723 /* MainStoryboard_iPad.storyboard */,
-				3CE2370B16FBB25600BA1723 /* FirstViewController.h */,
-				3CE2370C16FBB25600BA1723 /* FirstViewController.m */,
 				3CE2370E16FBB25600BA1723 /* first.png */,
 				3CE2371016FBB25600BA1723 /* first@2x.png */,
 				3CE2371216FBB25600BA1723 /* SecondViewController.h */,
@@ -297,8 +365,12 @@
 			files = (
 				3CE236FA16FBB25600BA1723 /* main.m in Sources */,
 				3CE236FE16FBB25600BA1723 /* AppDelegate.m in Sources */,
-				3CE2370D16FBB25600BA1723 /* FirstViewController.m in Sources */,
 				3CE2371416FBB25600BA1723 /* SecondViewController.m in Sources */,
+				3C1B090916FBB43B006F19AA /* ttMapViewController.m in Sources */,
+				3C1B091116FBB519006F19AA /* ttAppController.m in Sources */,
+				3C1B091816FBB809006F19AA /* ttMyTripsViewController.m in Sources */,
+				3C90FB6B171655030030DCED /* ttNewViewController.m in Sources */,
+				3C90FB6F171657280030DCED /* ttTrail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +492,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrailTracker/TrailTracker-Prefix.pch";
 				INFOPLIST_FILE = "TrailTracker/TrailTracker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TrailTracker;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -431,7 +503,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrailTracker/TrailTracker-Prefix.pch";
 				INFOPLIST_FILE = "TrailTracker/TrailTracker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TrailTracker;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -447,7 +519,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrailTracker/TrailTracker-Prefix.pch";
 				INFOPLIST_FILE = "TrailTrackerTests/TrailTrackerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TrailTrackerTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -464,7 +536,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrailTracker/TrailTracker-Prefix.pch";
 				INFOPLIST_FILE = "TrailTrackerTests/TrailTrackerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TrailTrackerTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -489,6 +561,7 @@
 				3CE2373216FBB25600BA1723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CE2373316FBB25600BA1723 /* Build configuration list for PBXNativeTarget "TrailTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +570,7 @@
 				3CE2373516FBB25600BA1723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
