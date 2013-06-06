@@ -35,6 +35,11 @@
 		3CE2372216FBB25600BA1723 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE236EF16FBB25600BA1723 /* Foundation.framework */; };
 		3CE2372A16FBB25600BA1723 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2372816FBB25600BA1723 /* InfoPlist.strings */; };
 		3CE2372D16FBB25600BA1723 /* TrailTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2372C16FBB25600BA1723 /* TrailTrackerTests.m */; };
+		DE108976175FE4C6003CED8A /* ttWayPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = DE108975175FE4C6003CED8A /* ttWayPoint.m */; };
+		DE10897B1760FF71003CED8A /* CrumbPath.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1089781760FF71003CED8A /* CrumbPath.m */; };
+		DE10897C1760FF71003CED8A /* CrumbPath.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1089781760FF71003CED8A /* CrumbPath.m */; };
+		DE10897D1760FF71003CED8A /* CrumbPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10897A1760FF71003CED8A /* CrumbPathView.m */; };
+		DE10897E1760FF71003CED8A /* CrumbPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10897A1760FF71003CED8A /* CrumbPathView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +92,12 @@
 		3CE2372916FBB25600BA1723 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3CE2372B16FBB25600BA1723 /* TrailTrackerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailTrackerTests.h; sourceTree = "<group>"; };
 		3CE2372C16FBB25600BA1723 /* TrailTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailTrackerTests.m; sourceTree = "<group>"; };
+		DE108974175FE4C6003CED8A /* ttWayPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttWayPoint.h; sourceTree = "<group>"; };
+		DE108975175FE4C6003CED8A /* ttWayPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttWayPoint.m; sourceTree = "<group>"; };
+		DE1089771760FF71003CED8A /* CrumbPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumbPath.h; sourceTree = "<group>"; };
+		DE1089781760FF71003CED8A /* CrumbPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumbPath.m; sourceTree = "<group>"; };
+		DE1089791760FF71003CED8A /* CrumbPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumbPathView.h; sourceTree = "<group>"; };
+		DE10897A1760FF71003CED8A /* CrumbPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumbPathView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +169,8 @@
 			children = (
 				3C90FB6D171657280030DCED /* ttTrail.h */,
 				3C90FB6E171657280030DCED /* ttTrail.m */,
+				DE108974175FE4C6003CED8A /* ttWayPoint.h */,
+				DE108975175FE4C6003CED8A /* ttWayPoint.m */,
 			);
 			name = ValueObjects;
 			sourceTree = "<group>";
@@ -197,6 +210,10 @@
 		3CE236F316FBB25600BA1723 /* TrailTracker */ = {
 			isa = PBXGroup;
 			children = (
+				DE1089771760FF71003CED8A /* CrumbPath.h */,
+				DE1089781760FF71003CED8A /* CrumbPath.m */,
+				DE1089791760FF71003CED8A /* CrumbPathView.h */,
+				DE10897A1760FF71003CED8A /* CrumbPathView.m */,
 				3C90FB6C171657150030DCED /* ValueObjects */,
 				3C1B090E16FBB504006F19AA /* AppController */,
 				3C1B090516FBB3F4006F19AA /* ViewControllers */,
@@ -371,6 +388,9 @@
 				3C1B091816FBB809006F19AA /* ttMyTripsViewController.m in Sources */,
 				3C90FB6B171655030030DCED /* ttNewViewController.m in Sources */,
 				3C90FB6F171657280030DCED /* ttTrail.m in Sources */,
+				DE108976175FE4C6003CED8A /* ttWayPoint.m in Sources */,
+				DE10897B1760FF71003CED8A /* CrumbPath.m in Sources */,
+				DE10897D1760FF71003CED8A /* CrumbPathView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +399,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CE2372D16FBB25600BA1723 /* TrailTrackerTests.m in Sources */,
+				DE10897C1760FF71003CED8A /* CrumbPath.m in Sources */,
+				DE10897E1760FF71003CED8A /* CrumbPathView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
