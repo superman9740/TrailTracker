@@ -28,7 +28,6 @@
 @property (nonatomic,strong) CLLocation* startPoint;
 @property (nonatomic, retain) MKPolyline *routeLine;
 @property (nonatomic, retain) MKPolylineView *routeLineView;
-@property (nonatomic, strong) CrumbPath *crumbs;
 @property (nonatomic, strong) CrumbPathView *crumbView;
 
 -(IBAction)startTracking:(id)sender;

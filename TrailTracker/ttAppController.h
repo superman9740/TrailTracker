@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import "ttTrail.h"
+#import "CrumbPath.h"
 
 @interface ttAppController : NSObject
 {
@@ -19,10 +20,9 @@
 
 @property (nonatomic) CLLocationDegrees                 currentLat;
 @property (nonatomic) CLLocationDegrees                 currentLon;
-@property (nonatomic) NSMutableDictionary               *wayPoints;
 
 @property (strong, nonatomic) NSMutableArray* myTrails;
-
+@property (strong, nonatomic) CrumbPath* waypoints;
 
 +(ttAppController*)sharedInstance;
 

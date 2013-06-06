@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ttAppController.h"
+#import <MapKit/MapKit.h>
 
-@interface ttNewViewController : UIViewController<UITextFieldDelegate, UITextViewDelegate>
+@interface ttNewViewController : UIViewController<UITextFieldDelegate, UITextViewDelegate, MKMapViewDelegate>
 {
     
     
@@ -21,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UITextView* desc;
 @property (weak, nonatomic) IBOutlet UIScrollView* picScrollView;
 @property (weak, nonatomic) IBOutlet UIView* previewView;
+@property (nonatomic, strong) IBOutlet MKMapView* mapView;
+@property (nonatomic, retain) MKPolyline *routeLine;
 
 
 

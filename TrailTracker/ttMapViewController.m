@@ -53,17 +53,18 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
     
+    CrumbPath* waypoints = [[ttAppController sharedInstance] waypoints];
     
     if ((oldLocation.coordinate.latitude != newLocation.coordinate.latitude) &&
         (oldLocation.coordinate.longitude != newLocation.coordinate.longitude))
     {
-        if (!self.crumbs)
+        if (!waypoints)
         {
             // This is the first time we're getting a location update, so create
             // the CrumbPath and add it to the map.
             //
-            _crumbs = [[CrumbPath alloc] initWithCenterCoordinate:newLocation.coordinate];
-            [_mapView addOverlay:self.crumbs];
+            waypoints = [[CrumbPath alloc] initWithCenterCoordinate:newLocation.coordinate];
+            [_mapView addOverlay:waypoints];
             
             // On the first location update only, zoom map to user location
             MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 2000, 2000);
@@ -80,7 +81,7 @@
             // so you may experience spikes in location data (in small time intervals)
             // due to 3G tower triangulation.
             //
-            MKMapRect updateRect = [self.crumbs addCoordinate:newLocation.coordinate];
+            MKMapRect updateRect = [waypoints addCoordinate:newLocation.coordinate];
             
             if (!MKMapRectIsNull(updateRect))
             {
@@ -95,6 +96,9 @@
             }
         }
     }
+    
+    [[ttAppController sharedInstance] setWaypoints:waypoints];  
+
 }
 
 
