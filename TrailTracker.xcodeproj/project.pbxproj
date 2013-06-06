@@ -40,6 +40,13 @@
 		DE10897C1760FF71003CED8A /* CrumbPath.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1089781760FF71003CED8A /* CrumbPath.m */; };
 		DE10897D1760FF71003CED8A /* CrumbPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10897A1760FF71003CED8A /* CrumbPathView.m */; };
 		DE10897E1760FF71003CED8A /* CrumbPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10897A1760FF71003CED8A /* CrumbPathView.m */; };
+		DE10898017613BE2003CED8A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10897F17613BE2003CED8A /* AVFoundation.framework */; };
+		DE10898217613BED003CED8A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10898117613BED003CED8A /* QuartzCore.framework */; };
+		DE10898417613BFE003CED8A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10898317613BFE003CED8A /* ImageIO.framework */; };
+		DE10898617613C12003CED8A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10898517613C12003CED8A /* CoreImage.framework */; };
+		DE10898817613C3B003CED8A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10898717613C3B003CED8A /* CoreVideo.framework */; };
+		DE10898A17613C55003CED8A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10898917613C55003CED8A /* AssetsLibrary.framework */; };
+		DE10898C17613C78003CED8A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10898B17613C78003CED8A /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +105,13 @@
 		DE1089781760FF71003CED8A /* CrumbPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumbPath.m; sourceTree = "<group>"; };
 		DE1089791760FF71003CED8A /* CrumbPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumbPathView.h; sourceTree = "<group>"; };
 		DE10897A1760FF71003CED8A /* CrumbPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumbPathView.m; sourceTree = "<group>"; };
+		DE10897F17613BE2003CED8A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DE10898117613BED003CED8A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DE10898317613BFE003CED8A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		DE10898517613C12003CED8A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		DE10898717613C3B003CED8A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		DE10898917613C55003CED8A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		DE10898B17613C78003CED8A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +119,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE10898C17613C78003CED8A /* CoreMedia.framework in Frameworks */,
+				DE10898A17613C55003CED8A /* AssetsLibrary.framework in Frameworks */,
+				DE10898817613C3B003CED8A /* CoreVideo.framework in Frameworks */,
+				DE10898617613C12003CED8A /* CoreImage.framework in Frameworks */,
+				DE10898417613BFE003CED8A /* ImageIO.framework in Frameworks */,
+				DE10898217613BED003CED8A /* QuartzCore.framework in Frameworks */,
+				DE10898017613BE2003CED8A /* AVFoundation.framework in Frameworks */,
 				3C1B090D16FBB4A9006F19AA /* CoreLocation.framework in Frameworks */,
 				3C1B090B16FBB463006F19AA /* MapKit.framework in Frameworks */,
 				3CE236EE16FBB25600BA1723 /* UIKit.framework in Frameworks */,
@@ -178,6 +199,13 @@
 		3CE236E116FBB25600BA1723 = {
 			isa = PBXGroup;
 			children = (
+				DE10898B17613C78003CED8A /* CoreMedia.framework */,
+				DE10898917613C55003CED8A /* AssetsLibrary.framework */,
+				DE10898717613C3B003CED8A /* CoreVideo.framework */,
+				DE10898517613C12003CED8A /* CoreImage.framework */,
+				DE10898317613BFE003CED8A /* ImageIO.framework */,
+				DE10898117613BED003CED8A /* QuartzCore.framework */,
+				DE10897F17613BE2003CED8A /* AVFoundation.framework */,
 				3C1B090C16FBB4A9006F19AA /* CoreLocation.framework */,
 				3C1B090A16FBB463006F19AA /* MapKit.framework */,
 				3CE236F316FBB25600BA1723 /* TrailTracker */,

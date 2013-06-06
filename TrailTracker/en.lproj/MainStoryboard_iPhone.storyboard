@@ -137,6 +137,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="takePhoto:" destination="T6Z-SI-MCT" eventType="touchUpInside" id="TUh-Is-XZL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qmi-vy-J6v">
                                         <rect key="frame" x="179" y="485" width="121" height="44"/>
@@ -183,12 +186,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="B2Y-v1-cRf"/>
                     <connections>
+                        <outlet property="cameraView" destination="K2X-Hr-8vK" id="sZW-Sz-QZg"/>
                         <outlet property="desc" destination="yIU-xf-ZHj" id="oTM-Qk-JUp"/>
                         <outlet property="mainScrollView" destination="Tmo-7r-hmY" id="RDy-RN-aI0"/>
                         <outlet property="mapView" destination="Klb-BY-Ilu" id="H7c-Ru-8cg"/>
                         <outlet property="name" destination="wia-X3-wUT" id="ECc-rz-4Gv"/>
-                        <outlet property="picScrollView" destination="68e-bE-60X" id="PqJ-mh-RA3"/>
-                        <outlet property="previewView" destination="K2X-Hr-8vK" id="44f-Tl-50o"/>
+                        <outlet property="picScrollView" destination="68e-bE-60X" id="l0o-Er-oAB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6dZ-ac-2IO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -257,7 +260,12 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ttNewViewController.h"/>
             <relationships>
                 <relationship kind="action" name="save:"/>
+                <relationship kind="action" name="takePhoto:"/>
+                <relationship kind="action" name="updatePicRollView:"/>
+                <relationship kind="outlet" name="cameraView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="captureButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="desc" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="images" candidateClass="NSMutableArray"/>
                 <relationship kind="outlet" name="mainScrollView" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
                 <relationship kind="outlet" name="name" candidateClass="UITextField"/>
