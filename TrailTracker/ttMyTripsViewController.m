@@ -14,16 +14,22 @@
 
 @implementation ttMyTripsViewController
 
+-(void)awakeFromNib
+{
 
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(refreshData:)  name:kObjectsWereLoadedNotification
+                                               object:nil];
+    
+    
+    
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -49,7 +55,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [[[ttAppController sharedInstance] myTrails] count];
+    return [[[ttAppController sharedInstance] trails] count];
     
 }
 
@@ -58,7 +64,13 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    ttTrail* trail = [[[ttAppController sharedInstance] myTrails] objectAtIndex:indexPath.row];
+    ttTrail* trail = [[[ttAppController sharedInstance] trails] objectAtIndex:indexPath.row];
+    if(trail.images.count > 0)
+    {
+        [cell.imageView setImage:[trail.images objectAtIndex:0]];
+        
+    }
+    
     cell.textLabel.text = trail.name;
     cell.detailTextLabel.text = trail.desc;
     
@@ -109,19 +121,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    
+    ttTrail* trail = [[[ttAppController sharedInstance] trails] objectAtIndex:indexPath.row];
+    
+    [[ttAppController sharedInstance] setCurrentTrail:trail];
+    [self performSegueWithIdentifier:@"showNewTrip" sender:self];
+    
+
 }
 
 
 -(IBAction)createNewTrip:(id)sender
 {
     [self performSegueWithIdentifier:@"showNewTrip" sender:self];
+    
+    
+}
+
+-(IBAction)refreshData:(id)sender
+{
+    [self.tableView reloadData];
     
     
 }

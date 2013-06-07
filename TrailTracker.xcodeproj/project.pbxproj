@@ -47,6 +47,12 @@
 		DE10898817613C3B003CED8A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10898717613C3B003CED8A /* CoreVideo.framework */; };
 		DE10898A17613C55003CED8A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10898917613C55003CED8A /* AssetsLibrary.framework */; };
 		DE10898C17613C78003CED8A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10898B17613C78003CED8A /* CoreMedia.framework */; };
+		DE10899317626B7E003CED8A /* TrailTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE10899117626B7E003CED8A /* TrailTracker.xcdatamodeld */; };
+		DE10899517627329003CED8A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE10899417627329003CED8A /* CoreData.framework */; };
+		DE108999176284B9003CED8A /* AVCamRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = DE108998176284B9003CED8A /* AVCamRecorder.m */; };
+		DE10899A176284B9003CED8A /* AVCamRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = DE108998176284B9003CED8A /* AVCamRecorder.m */; };
+		DE10899D176284E0003CED8A /* AVCamUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10899C176284E0003CED8A /* AVCamUtilities.m */; };
+		DE10899E176284E0003CED8A /* AVCamUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10899C176284E0003CED8A /* AVCamUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +118,12 @@
 		DE10898717613C3B003CED8A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		DE10898917613C55003CED8A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		DE10898B17613C78003CED8A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		DE10899217626B7E003CED8A /* TrailTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrailTracker.xcdatamodel; sourceTree = "<group>"; };
+		DE10899417627329003CED8A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DE108997176284B9003CED8A /* AVCamRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamRecorder.h; sourceTree = "<group>"; };
+		DE108998176284B9003CED8A /* AVCamRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamRecorder.m; sourceTree = "<group>"; };
+		DE10899B176284E0003CED8A /* AVCamUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamUtilities.h; sourceTree = "<group>"; };
+		DE10899C176284E0003CED8A /* AVCamUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamUtilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE10899517627329003CED8A /* CoreData.framework in Frameworks */,
 				DE10898C17613C78003CED8A /* CoreMedia.framework in Frameworks */,
 				DE10898A17613C55003CED8A /* AssetsLibrary.framework in Frameworks */,
 				DE10898817613C3B003CED8A /* CoreVideo.framework in Frameworks */,
@@ -199,6 +212,7 @@
 		3CE236E116FBB25600BA1723 = {
 			isa = PBXGroup;
 			children = (
+				DE10899417627329003CED8A /* CoreData.framework */,
 				DE10898B17613C78003CED8A /* CoreMedia.framework */,
 				DE10898917613C55003CED8A /* AssetsLibrary.framework */,
 				DE10898717613C3B003CED8A /* CoreVideo.framework */,
@@ -238,6 +252,7 @@
 		3CE236F316FBB25600BA1723 /* TrailTracker */ = {
 			isa = PBXGroup;
 			children = (
+				DE108996176284AB003CED8A /* CustomClasses */,
 				DE1089771760FF71003CED8A /* CrumbPath.h */,
 				DE1089781760FF71003CED8A /* CrumbPath.m */,
 				DE1089791760FF71003CED8A /* CrumbPathView.h */,
@@ -270,6 +285,7 @@
 				3CE236FF16FBB25600BA1723 /* Default.png */,
 				3CE2370116FBB25600BA1723 /* Default@2x.png */,
 				3CE2370316FBB25600BA1723 /* Default-568h@2x.png */,
+				DE10899117626B7E003CED8A /* TrailTracker.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -291,6 +307,17 @@
 				3CE2372816FBB25600BA1723 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE108996176284AB003CED8A /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				DE10899B176284E0003CED8A /* AVCamUtilities.h */,
+				DE10899C176284E0003CED8A /* AVCamUtilities.m */,
+				DE108997176284B9003CED8A /* AVCamRecorder.h */,
+				DE108998176284B9003CED8A /* AVCamRecorder.m */,
+			);
+			name = CustomClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +446,9 @@
 				DE108976175FE4C6003CED8A /* ttWayPoint.m in Sources */,
 				DE10897B1760FF71003CED8A /* CrumbPath.m in Sources */,
 				DE10897D1760FF71003CED8A /* CrumbPathView.m in Sources */,
+				DE10899317626B7E003CED8A /* TrailTracker.xcdatamodeld in Sources */,
+				DE108999176284B9003CED8A /* AVCamRecorder.m in Sources */,
+				DE10899D176284E0003CED8A /* AVCamUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +459,8 @@
 				3CE2372D16FBB25600BA1723 /* TrailTrackerTests.m in Sources */,
 				DE10897C1760FF71003CED8A /* CrumbPath.m in Sources */,
 				DE10897E1760FF71003CED8A /* CrumbPathView.m in Sources */,
+				DE10899A176284B9003CED8A /* AVCamRecorder.m in Sources */,
+				DE10899E176284E0003CED8A /* AVCamUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +655,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DE10899117626B7E003CED8A /* TrailTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE10899217626B7E003CED8A /* TrailTracker.xcdatamodel */,
+			);
+			currentVersion = DE10899217626B7E003CED8A /* TrailTracker.xcdatamodel */;
+			path = TrailTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3CE236E216FBB25600BA1723 /* Project object */;
 }

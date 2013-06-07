@@ -19,5 +19,6 @@
 @property (weak, nonatomic) IBOutlet UITableView*  tableView;
 
 -(IBAction)createNewTrip:(id)sender;
+-(IBAction)refreshData:(id)sender;
 
 @end

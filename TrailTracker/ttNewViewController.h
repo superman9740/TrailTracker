@@ -12,6 +12,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <QuartzCore/QuartzCore.h>
 #import <ImageIO/ImageIO.h>
+#import "AVCamRecorder.h"
 
 
 
@@ -37,10 +38,13 @@
 @property (strong, nonatomic) AVCaptureStillImageOutput* stillImageOutput;
 @property (strong, nonatomic) AVCaptureVideoPreviewLayer* previewLayer;
 @property (weak, nonatomic) IBOutlet UIButton* captureButton;
+@property (strong, nonatomic) AVCamRecorder* videoRecorder;
+@property (nonatomic) BOOL isRecording;
 
 
 
 -(IBAction)takePhoto:(id)sender;
+-(IBAction)startRecordingVideo:(id)sender;
 
 -(IBAction)save:(id)sender;
 -(IBAction)updatePicRollView:(id)sender;

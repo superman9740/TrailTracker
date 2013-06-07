@@ -83,6 +83,18 @@
     
     [_mapView setRegion:region animated:YES];
 
+    ttTrail* currentTrail = [[ttAppController sharedInstance] currentTrail];
+    if(currentTrail != nil)
+    {
+        
+        _name.text = currentTrail.name;
+        _desc.text = currentTrail.desc;
+        _images = currentTrail.images;
+        [self updatePicRollView:self];
+        
+    }
+    
+    
 }
 #pragma mark mapkit methods
 
@@ -126,15 +138,32 @@
     
     
     _previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:_session];
-    _previewLayer.frame = _cameraView.frame;
-   // _previewLayer.videoGravity = AVLayerVideoGravityResize;
+    CGRect layerRect = _cameraView.layer.bounds;
+	_previewLayer.bounds = layerRect;
     
+	[_previewLayer setPosition:CGPointMake(CGRectGetMidX(layerRect),CGRectGetMidY(layerRect))];
+
+    
+    _previewLayer.videoGravity = AVLayerVideoGravityResize;
     [_cameraView.layer addSublayer:_previewLayer];
     
     [self setStillImageOutput:[[AVCaptureStillImageOutput alloc] init]];
     NSDictionary *outputSettings = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithUnsignedInt:kCVPixelFormatType_32BGRA], (id)kCVPixelBufferPixelFormatTypeKey, nil];
     [[self stillImageOutput] setOutputSettings:outputSettings];
     [_session addOutput:[self stillImageOutput]];
+    NSURL *outputURL = [[self applicationDocumentsDirectory]    URLByAppendingPathComponent:@"output.mov"];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:[outputURL path]])
+    {
+        NSError *error;
+        if ([fileManager removeItemAtPath:outputURL.path error:&error] == NO)
+        {
+            //Error - handle if requried
+        }
+    }
+    
+    _videoRecorder = [[AVCamRecorder alloc] initWithSession:_session outputFileURL:outputURL];
+    
     
 }
 
@@ -271,13 +300,46 @@
     return YES;
 }
 
+-(IBAction)startRecordingVideo:(id)sender
+{
+    
+    if(_isRecording)
+    {
+        _isRecording = false;
+        [_videoRecorder stopRecording];
+        
+        
+        
+    }
+    else
+    {
+    
+        _isRecording = true;
+        [_videoRecorder startRecordingWithOrientation:AVCaptureVideoOrientationPortrait];
+        
+        
+    }
+    
+    
+}
+
+- (NSURL *)applicationDocumentsDirectory
+{
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+
 -(IBAction)save:(id)sender
 {
     
     ttTrail* newTrail = [[ttTrail alloc] init];
     newTrail.name = _name.text;
     newTrail.desc = _desc.text;
-    [[[ttAppController sharedInstance] myTrails] addObject:newTrail];
+    newTrail.images = _images;
+    
+    
+    [[ttAppController sharedInstance] saveTrail:newTrail];
+     
     [self.navigationController popViewControllerAnimated:YES];
     
     
